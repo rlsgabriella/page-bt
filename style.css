@@ -68,7 +68,7 @@ main {
 
 /* Carrossel */
 .carousel-background {
-    height: 75vh;
+    height: 65vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -81,6 +81,7 @@ main {
     border-radius: 10px;
     text-align: center;
 }
+
 
 /* Seções */
 .section-title {
