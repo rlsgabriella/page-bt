@@ -68,19 +68,87 @@ main {
 
 /* Carrossel */
 .carousel-background {
-    height: 65vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    opacity: 0.9;
+    background-size: cover; /* Faz a imagem cobrir toda a área disponível */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    width: 100%; /* Largura 100% */
+    position: relative; /* Garante que o conteúdo sobreponha a imagem */
+    opacity: 0.9; /* Deixa a imagem um pouco mais suave */
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+/* Ajuste para manter o Aspect Ratio do carrossel */
+.carousel-item .carousel-background {
+    aspect-ratio: 16 / 9; /* Aspect ratio para 16:9 (boa proporção para a maioria das imagens) */
+    background-size: cover; /* Garante que a imagem cubra o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    width: 100%; /* Largura 100% */
+    height: auto; /* Ajusta a altura com base no aspect ratio */
 }
+
+/* Ajuste para telas grandes (desktop) */
+@media (min-width: 1024px) {
+    .carousel-item .carousel-background {
+        aspect-ratio: 21 / 9; /* Altera o aspect ratio para um formato mais largo em desktops */
+        height: 80vh; /* Ajusta a altura para 80% da altura da tela */
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
+        padding: 20px 40px; /* Maior padding no desktop para uma melhor aparência */
+        border-radius: 15px; /* Bordas arredondadas */
+        text-align: center; /* Centraliza o texto */
+        font-size: 1rem; /* Ajusta o tamanho da fonte no desktop */
+    }
+
+    .carousel-caption h2 {
+        font-size: 2rem; /* Tamanho do título ajustado */
+    }
+
+    .carousel-caption p {
+        font-size: 1.25rem; /* Tamanho do parágrafo ajustado */
+    }
+}
+
+/* Ajuste no tamanho da legenda para telas médias e pequenas */
+@media (max-width: 1023px) {
+    .carousel-item .carousel-background {
+        aspect-ratio: 16 / 9; /* Retorna ao aspect ratio 16:9 para telas médias */
+        height: auto; /* Ajusta a altura para ser proporcional */
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
+        padding: 10px 20px; /* Diminui o padding para telas menores */
+        border-radius: 10px; /* Bordas arredondadas */
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.5rem; /* Tamanho do título ajustado para dispositivos médios */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Tamanho do parágrafo ajustado para dispositivos médios */
+    }
+}
+
+/* Ajuste do tamanho geral da legenda em telas pequenas */
+@media (max-width: 768px) {
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
+        padding: 8px 16px; /* Reduz mais o padding em telas pequenas */
+        border-radius: 8px; /* Bordas arredondadas */
+    }
+    
+    .carousel-caption h2 {
+        font-size: 1.2rem; /* Tamanho do título ainda menor em telas pequenas */
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem; /* Tamanho do parágrafo reduzido em telas pequenas */
+    }
+}
+
 
 
 /* Seções */
@@ -98,6 +166,10 @@ main {
     width: 50px;
     height: 3px;
     background-color: var(--primary-color);
+}
+
+.jumbotron {
+    padding: 4rem 2rem 0rem 2rem !important
 }
 
 /* Cards */
@@ -137,8 +209,3 @@ main {
         font-size: 2rem;
     }
 }
-
-/* Animações */
-@keyframes fadeInUp {
-    from {
-    
