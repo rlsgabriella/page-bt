@@ -1,28 +1,25 @@
 
 /* Botões */
 .btn-primary {
-    background-color: #3bb93b !important; /* Verde escuro */
-    border-color: #215121 !important;    /* Ajustar o contorno */
+    background-color: #3bb93b !important; 
+    border-color: #215121 !important;    
 }
 
 .btn-primary:hover {
-    background-color: #194919 !important; /* Cor mais escura ao passar o mouse */
-    border-color: #194919 !important;
+    background-color: #194919 !important; 
 }
-
-/* Texto */
 .text-primary {
-    color: #215121 !important; /* Verde escuro */
+    color: #215121 !important; 
 }
 
 /* Ícones */
 .social-icons i, .fas {
-    color: #215121 !important; /* Verde escuro */
+    color: #215121 !important; 
 }
 
 /* Corpo */
 body {
-    background-image: url(/images/fundo-gelo.jpg);
+    background-image: url(/images/fundo4.jpg);
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333; 
@@ -68,84 +65,84 @@ main {
 
 /* Carrossel */
 .carousel-background {
-    background-size: cover; /* Faz a imagem cobrir toda a área disponível */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    width: 100%; /* Largura 100% */
-    position: relative; /* Garante que o conteúdo sobreponha a imagem */
-    opacity: 0.9; /* Deixa a imagem um pouco mais suave */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    position: relative; 
+    opacity: 0.9; 
 }
 
-/* Ajuste para manter o Aspect Ratio do carrossel */
+
 .carousel-item .carousel-background {
-    aspect-ratio: 16 / 9; /* Aspect ratio para 16:9 (boa proporção para a maioria das imagens) */
-    background-size: cover; /* Garante que a imagem cubra o espaço */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição */
-    width: 100%; /* Largura 100% */
-    height: auto; /* Ajusta a altura com base no aspect ratio */
+    aspect-ratio: 16 / 9; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: auto; 
 }
 
-/* Ajuste para telas grandes (desktop) */
+
 @media (min-width: 1024px) {
     .carousel-item .carousel-background {
-        aspect-ratio: 21 / 9; /* Altera o aspect ratio para um formato mais largo em desktops */
-        height: 80vh; /* Ajusta a altura para 80% da altura da tela */
+        aspect-ratio: 21 / 9; 
+        height: 80vh; 
     }
 
     .carousel-caption {
-        background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
-        padding: 20px 40px; /* Maior padding no desktop para uma melhor aparência */
-        border-radius: 15px; /* Bordas arredondadas */
-        text-align: center; /* Centraliza o texto */
-        font-size: 1rem; /* Ajusta o tamanho da fonte no desktop */
+        background-color: rgba(0, 0, 0, 0.6); 
+        padding: 20px 40px; 
+        border-radius: 15px; 
+        text-align: center; 
+        font-size: 1rem; 
     }
 
     .carousel-caption h2 {
-        font-size: 2rem; /* Tamanho do título ajustado */
+        font-size: 2rem; 
     }
 
     .carousel-caption p {
-        font-size: 1.25rem; /* Tamanho do parágrafo ajustado */
+        font-size: 1.25rem; 
     }
 }
 
-/* Ajuste no tamanho da legenda para telas médias e pequenas */
+
 @media (max-width: 1023px) {
     .carousel-item .carousel-background {
-        aspect-ratio: 16 / 9; /* Retorna ao aspect ratio 16:9 para telas médias */
-        height: auto; /* Ajusta a altura para ser proporcional */
+        aspect-ratio: 16 / 9; 
+        height: auto; 
     }
 
     .carousel-caption {
-        background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
-        padding: 10px 20px; /* Diminui o padding para telas menores */
-        border-radius: 10px; /* Bordas arredondadas */
+        background-color: rgba(0, 0, 0, 0.6); 
+        padding: 10px 20px; 
+        border-radius: 10px; 
     }
 
     .carousel-caption h2 {
-        font-size: 1.5rem; /* Tamanho do título ajustado para dispositivos médios */
+        font-size: 1.5rem; 
     }
 
     .carousel-caption p {
-        font-size: 1rem; /* Tamanho do parágrafo ajustado para dispositivos médios */
+        font-size: 1rem; 
     }
 }
 
-/* Ajuste do tamanho geral da legenda em telas pequenas */
+
 @media (max-width: 768px) {
     .carousel-caption {
-        background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
-        padding: 8px 16px; /* Reduz mais o padding em telas pequenas */
-        border-radius: 8px; /* Bordas arredondadas */
+        background-color: rgba(0, 0, 0, 0.6); 
+        padding: 8px 16px; 
+        border-radius: 8px; 
     }
     
     .carousel-caption h2 {
-        font-size: 1.2rem; /* Tamanho do título ainda menor em telas pequenas */
+        font-size: 1.2rem; 
     }
 
     .carousel-caption p {
-        font-size: 0.9rem; /* Tamanho do parágrafo reduzido em telas pequenas */
+        font-size: 0.9rem; 
     }
 }
 
@@ -208,4 +205,51 @@ main {
     .section-title {
         font-size: 2rem;
     }
+}
+
+
+ /* Serviços */
+
+ .photo-panel {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.photo-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
