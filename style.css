@@ -83,6 +83,7 @@ h2.display-5 {
     width: 100%; 
     position: relative; 
     opacity: 0.9; 
+    height: 500px;
 }
 
 .carousel-item .carousel-background {
