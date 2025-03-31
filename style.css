@@ -1,269 +1,280 @@
 /* Botões */
 .btn-primary {
-    background-color: #3bb93b !important; 
-    border-color: #215121 !important;    
+  background-color: #03a64a !important;
+  border-color: #1c8c4d !important;
 }
 
 .btn-primary:hover {
-    background-color: #194919 !important; 
+  background-color: #1c8c4d !important;
 }
 .text-primary {
-    color: #215121 !important; 
+  color: #1c8c4d !important;
 }
 
 /* Ícones */
-.social-icons i, .fas {
-    color: #215121 !important; 
+.social-icons i,
+.fas {
+  color: #1c8c4d !important;
 }
 
 /* Corpo */
 body {
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333; 
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Navbar */
 .navbar {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-brand img {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar.scrolled {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.scrolled .navbar-brand img {
-    height: 35px;
+  height: 35px;
 }
 
 /* Main */
 main {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 h2.display-5 {
-    color: #194619; 
-    font-weight: bold; 
-    font-size: 2rem; 
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
-    letter-spacing: 2px; 
-    line-height: 1.5;
-    padding: 20px; 
-    margin: 0; 
-    text-transform: uppercase; 
+  color: #194619;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  line-height: 1.5;
+  padding: 20px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 /* Hero */
 .hero {
-    margin-top: 100px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+  margin-top: 100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Carrossel */
 .carousel-background {
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    width: 100%; 
-    position: relative; 
-    opacity: 0.9; 
-    height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  opacity: 0.9;
+  height: 500px;
 }
 
 .carousel-item .carousel-background {
-    aspect-ratio: 16 / 9; 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    width: 100%; 
-    height: auto; 
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 1024px) {
-    .carousel-item .carousel-background {
-        aspect-ratio: 21 / 9; 
-        height: 80vh; 
-    }
+  .carousel-item .carousel-background {
+    aspect-ratio: 21 / 9;
+    height: 80vh;
+  }
 
-    .carousel-caption {
-        background-color: rgba(0, 0, 0, 0.6); 
-        padding: 20px 40px; 
-        border-radius: 15px; 
-        text-align: center; 
-        font-size: 1rem; 
-    }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1rem;
+  }
 
-    .carousel-caption h2 {
-        font-size: 2rem; 
-    }
+  .carousel-caption h2 {
+    font-size: 2rem;
+  }
 
-    .carousel-caption p {
-        font-size: 1.25rem; 
-    }
+  .carousel-caption p {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 1023px) {
-    .carousel-item .carousel-background {
-        aspect-ratio: 16 / 9; 
-        height: auto; 
-    }
+  .carousel-item .carousel-background {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
 
-    .carousel-caption {
-        background-color: rgba(0, 0, 0, 0.6); 
-        padding: 10px 20px; 
-        border-radius: 10px; 
-    }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
 
-    .carousel-caption h2 {
-        font-size: 1.5rem; 
-    }
+  .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
 
-    .carousel-caption p {
-        font-size: 1rem; 
-    }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .carousel-caption {
-        background-color: rgba(0, 0, 0, 0.6); 
-        padding: 8px 16px; 
-        border-radius: 8px; 
-    }
-    
-    .carousel-caption h2 {
-        font-size: 1.2rem; 
-    }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
 
-    .carousel-caption p {
-        font-size: 0.9rem; 
-    }
+  .carousel-caption h2 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
 }
 
 /* Seções */
 .section-title {
-    position: relative;
-    padding-bottom: 15px;
-    margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .section-title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: 3px;
-    background-color: var(--primary-color);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
 }
 
 .jumbotron {
-    padding: 4rem 2rem 0rem 2rem !important;
-    background-color: transparent !important; 
-    border: none; 
-    box-shadow: none;
-    
+  padding: 4rem 2rem 0rem 2rem !important;
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
 }
 
 /* Cards */
 .benefit-card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .benefit-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Ícones sociais */
 .social-icons a {
-    transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .social-icons a:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .hero {
-        height: 70vh;
-    }
+  .hero {
+    height: 70vh;
+  }
 
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
 
-    .section-title {
-        font-size: 2rem;
-    }
+  .section-title {
+    font-size: 2rem;
+  }
 }
-
-
 
 /* Serviços */
 .photo-panel {
-    font-family: 'Roboto', sans-serif;
-    padding: 50px 20px;
-    text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .section-title {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
 }
 
 .section-description {
-    font-size: 1.2rem;
-    color: #6c757d;
-    margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 30px;
 }
 
 .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .photo-item {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 320px;
+  text-align: center;
 }
 
 .photo-item img {
-    width: auto;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.photo-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .photo-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
+@media (max-width: 768px) {
+  .photo-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
