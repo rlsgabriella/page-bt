@@ -1,4 +1,4 @@
-# Site de Energia Solar
+# Site Btx Engenharia
 
 u
 Este é um projeto freelancer de uma página desenvolvida para a empresa BTx Engenharia, utilizando HTML, CSS, JavaScript e Bootstrap para um design responsivo e moderno.
