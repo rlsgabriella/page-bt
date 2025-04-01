@@ -1,7 +1,7 @@
 {
     "rewrites": [
         {
-            "source": "/home",
+            "source": "/pagina-inicial",
             "destination": "/index.html"
         },
         {
