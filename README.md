@@ -29,10 +29,6 @@ Este é um projeto freelancer de uma página desenvolvida para a empresa BTx Eng
    ```
 3. Abra o arquivo `index.html` no navegador.
 
-## Capturas de Tela
-
-(Adicione aqui imagens do projeto, se possível)
-
 ## Contato
 
 Caso tenha interesse em um site similar ou precise de alguma melhoria, entre em contato:
